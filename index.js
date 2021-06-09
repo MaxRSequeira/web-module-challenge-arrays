@@ -49,6 +49,9 @@ function copy(/*your code here*/){
     /*your code here*/
 }    
 
+const repeatFlavors = originalFlavors;
+/*flavor list repeater*/
+
 
 
 
@@ -67,6 +70,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 function is31Flavors(/*your code here*/){
    /*your code here*/
 }
+array.length
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -84,7 +88,8 @@ Use the addFlavor function below to do the following:
 function addFlavor(/*your code here*/){
    /*your code here*/
 }
-
+array.push("Rainbow Sherbert")
+array.unshift("Rainbow Sherbert")
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -100,7 +105,7 @@ Use the removeLastFlavor function below to do the following:
 function removeLastFlavor(/*your code here*/){
    /*your code here*/
 }
-
+array.pop("Last flavor")
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -117,7 +122,8 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(/*your code here*/){
     /*your code here*/
 }
-
+?
+array.splice?
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -137,7 +143,7 @@ Use the removeFlavorByName function below to do the following:
 function removeFlavorByName(/*your code here*/){
     /*your code here*/
 }
-
+array.splice("Rocky Road")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -167,9 +173,10 @@ function filterByWord(array, string){
             filteredFlavours.push(array[i]);
         }
     }
+    return filteredFlavours;
 }
-return filteredFlavours;
-console.log ("task 7", filterByWord(originalFlavors, 'chocolate'))
+
+console.log ("task 7", filterByWord(originalFlavors, 'Chocolate'));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
@@ -186,7 +193,7 @@ Use the getAverageWordLength function below to do the following:
 function getAverageWordLength(/*code here*/){
     /*code here*/
 }
-
+avg = arr.join('').length / arr.lengt???
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪
 Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors 
